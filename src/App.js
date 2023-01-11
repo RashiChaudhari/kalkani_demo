@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import TextField from "@mui/material/TextField";
+import SearchIcon from "@mui/icons-material/Search";
+import Button from "@mui/material/Button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      {" "}
+      <div className="App">
+        <h1>Search Anime Characters</h1>
+        <SearchIcon />
+
+        <TextField style={{ width: "50%" }}></TextField>
+        <Button
+          variant="contained"
+          style={{ marginLeft: "30px", borderRadius: "20px" }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Search
+        </Button>
+      </div>
+      <div style={{}}></div>
+    </>
   );
 }
 
